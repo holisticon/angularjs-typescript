@@ -1,0 +1,53 @@
+{
+  "name": "angularjs-typescript",
+  "version": "0.1.0",
+  "description": "AngularJS TypeScript Demo project",
+  "main": "/",
+  "scripts": {
+    "start": "npm install && npm run watch",
+    "watch": "cross-env NODE_ENV=development webpack-dev-server --hot --port 3000 ",
+    "build": "cross-env NODE_ENV=production webpack",
+    "check": "eslint \"src/*/frontend/**/*.js\" && nsp check",
+    "pretest": "npm run check",
+    "tslint": "tslint \"test/**/*.ts\" --exclude \"test/node_modules/**/*\"",
+    "tsc": "tsc",
+    "test": "cross-env NODE_ENV=test karma start karma.conf.ci.js",
+    "debug": "cross-env NODE_ENV=test karma start karma.conf.js"
+  },
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-route": "1.5.8",
+    "bootstrap-sass": "3.3.6",
+    "components-font-awesome": "4.6.1",
+    "jquery": "2.2.4",
+    "lodash": "4.12.0"
+  },
+  "devDependencies": {
+    "@holisticon/angularjs-common": "0.3.0-14",
+    "@types/angular": "1.5.8",
+    "@types/angular-mocks": "0.0.0",
+    "@types/angular-route": "1.3.2",
+    "@types/lodash": "4.14.41",
+    "angular-mocks": "1.5.8"
+  },
+  "keywords": [
+    "angularjs",
+    "holisticon",
+    "webpack",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holisticon/angular-common.git"
+  },
+  "author": "Martin Reinhardt <martin.reinhardt@holisticon.de>",
+  "contributors": [
+    {"name": "Brecht Billiet", "email": "billietbrecht@gmail.com"}
+  ],
+  "license": "MIT",
+  "engine-strict": true,
+  "engines": {
+    "node": ">= 4.4",
+    "npm": ">= 3"
+  }
+}

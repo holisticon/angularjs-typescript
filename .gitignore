@@ -1,0 +1,8 @@
+.awcache/
+.idea/
+node_modules
+dist
+reports
+typings
+out
+typings
