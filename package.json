@@ -23,7 +23,7 @@
     "lodash": "4.12.0"
   },
   "devDependencies": {
-    "@holisticon/angularjs-common": "0.3.0-14",
+    "@holisticon/angularjs-common": "0.3.0-17",
     "@types/angular": "1.5.8",
     "@types/angular-mocks": "0.0.0",
     "@types/angular-route": "1.3.2",

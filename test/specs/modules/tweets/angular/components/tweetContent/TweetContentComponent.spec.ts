@@ -1,10 +1,5 @@
-import * as angular from 'angular';
-import 'angular-mocks';
-import '../../index';
-import { ComponentTest } from '../../../../util/ComponentTest';
-import 'phantomjs-polyfill';
-import { TweetContentController } from './TweetContentComponent';
-import { ContentModel } from '../../../core/models/impl/ContentModel';
+import { angular, ComponentTest } from '../../../../../setup'; import { ContentModel } from './../../../../../../../src/modules/tweets/core/models/impl/ContentModel';
+import { TweetContentController } from './../../../../../../../src/modules/tweets/angular/components/tweetContent/TweetContentComponent';
 
 describe('Component TweetContentComponent', () => {
     var directiveTest: ComponentTest<TweetContentController>;

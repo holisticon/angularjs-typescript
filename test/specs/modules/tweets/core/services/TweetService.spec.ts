@@ -1,6 +1,7 @@
-import {TweetService} from '../impl/TweetService';
-import {Tweet} from '../../entities/Tweet';
 import * as _ from 'lodash';
+import { Tweet } from './../../../../../../src/modules/tweets/core/entities/Tweet';
+import { TweetService } from './../../../../../../src/modules/tweets/core/services/impl/TweetService';
+
 describe('Service: TweetService', () => {
     var tweetService: TweetService;
     beforeEach(() => {

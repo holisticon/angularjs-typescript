@@ -1,9 +1,5 @@
-import * as angular from 'angular';
-import 'angular-mocks';
-import '../../index';
-import {ComponentTest} from '../../../../util/ComponentTest';
-import {StarController} from './StarComponent';
-import 'phantomjs-polyfill';
+import { angular, ComponentTest } from '../../../../../setup';
+import { StarController } from '../../../../../../../src/modules/application/angular/components/star/StarComponent';
 
 describe('Component StarComponent', () => {
     var directiveTest: ComponentTest<StarController>;

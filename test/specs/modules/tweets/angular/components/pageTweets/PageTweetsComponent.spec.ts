@@ -1,16 +1,12 @@
-import * as angular from 'angular';
-import 'angular-mocks';
-import '../../index';
-import {ComponentTest} from '../../../../util/ComponentTest';
-import 'phantomjs-polyfill';
-import {PageTweetsController} from './PageTweetsComponent';
-import {SharedModel} from '../../../core/models/impl/SharedModel';
+import { angular, ComponentTest } from '../../../../../setup';
+import { PageTweetsController } from '../../../../../../../src/modules/tweets/angular/components/pageTweets/PageTweetsComponent';
+import { SharedModel } from '../../../../../../../src/modules/tweets/core/models/impl/SharedModel';
 describe('Component PageTweetsComponent', () => {
     var directiveTest: ComponentTest<PageTweetsController>;
     var sharedModelMock: SharedModel;
     beforeEach(angular.mock.module('app.tweets', ($provide: any) => {
         sharedModelMock = <SharedModel>{};
-        $provide.service('SharedModel', () =>  sharedModelMock);
+        $provide.service('SharedModel', () => sharedModelMock);
     }));
     beforeEach(() => {
         directiveTest = new ComponentTest<PageTweetsController>('<page-tweets></page-tweets>', 'pageTweets');

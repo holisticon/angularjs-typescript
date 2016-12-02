@@ -1,10 +1,6 @@
-import * as angular from 'angular';
-import 'angular-mocks';
-import '../../index';
-import { ComponentTest } from '../../../../util/ComponentTest';
-import 'phantomjs-polyfill';
-import { TweetMainController } from './TweetMainComponent';
-import { SharedModel } from '../../../core/models/impl/SharedModel';
+import { SharedModel } from './../../../../../../../src/modules/tweets/core/models/impl/SharedModel';
+import { TweetMainController } from './../../../../../../../src/modules/tweets/angular/components/tweetMain/TweetMainComponent';
+import { angular, ComponentTest } from '../../../../../setup';
 
 describe('Component TweetSidebarComponent', () => {
     var directiveTest: ComponentTest<TweetMainController>;

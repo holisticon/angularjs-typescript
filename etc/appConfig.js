@@ -7,7 +7,12 @@ var sourceRoot = path.resolve(__dirname, '..', 'src'),
 // overwrite defaults
 var appConfig = {
   srcPath: 'src',
-  testPath: 'src',
+  testPath: 'test',
+  testSpecs: '/specs/**/*.ts',
+  junit: {
+    title: 'ngTypeScript',
+    dir: 'dist/test-reports'
+  },
   appPath: 'src/index.ts',
   templatesPath: 'src',
   entry: {
