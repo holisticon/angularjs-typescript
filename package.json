@@ -15,18 +15,19 @@
     "debug": "cross-env NODE_ENV=test karma start karma.conf.js"
   },
   "dependencies": {
+    "@types/angular": "1.5.8",
+    "@types/angular-route": "1.3.2",
+    "@types/core-js": "0.9.34",
     "angular": "1.5.8",
     "angular-route": "1.5.8",
     "bootstrap-sass": "3.3.6",
+    "core-js": "2.4.1",
     "components-font-awesome": "4.6.1",
     "jquery": "2.2.4",
     "lodash": "4.12.0"
   },
   "devDependencies": {
-    "@holisticon/angularjs-common": "0.3.0-17",
-    "@types/angular": "1.5.8",
-    "@types/angular-mocks": "0.0.0",
-    "@types/angular-route": "1.3.2",
+    "@holisticon/angularjs-common": "0.3.0-18",
     "@types/lodash": "4.14.41",
     "angular-mocks": "1.5.8"
   },
