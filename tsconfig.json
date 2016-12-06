@@ -6,11 +6,9 @@
     "sourceMap": true,
     "module": "commonjs",
     "moduleResolution": "node",
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "typeRoots": ["node_modules/@types"]
   },
-  "typeRoots": [
-    "node_modules/@types/"
-  ],
   "lib": [
     "dom",
     "es6"
@@ -25,6 +23,7 @@
   "exclude": [
     "out",
     "node_modules",
+    "node_modules/@types/angular-mocks",
     "dist",
     "dev",
     "typings/main.d.ts",

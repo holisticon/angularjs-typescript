@@ -64,3 +64,4 @@ test/specs/modules/tweets/core/services/*.js*
 test/specs/modules/tweets/core/services/impl/*.js*
 test/specs/modules/util/*.js*
 test/specs/modules/utils/*.js*
+*.log
