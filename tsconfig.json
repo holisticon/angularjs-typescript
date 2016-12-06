@@ -6,9 +6,11 @@
     "sourceMap": true,
     "module": "commonjs",
     "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "outDir": "src"
+    "experimentalDecorators": true
   },
+  "typeRoots": [
+    "node_modules/@types/"
+  ],
   "lib": [
     "dom",
     "es6"
